@@ -86,7 +86,7 @@ router.post('/upDateHA', function (request, response){
 
   console.log(tenHA + noiDungHA + ngayThangHA + linkHA);
 
-  HinhAnh.updateOne({tenHA : tenHA}, {tenHA: tenHA, noiDungHA : noiDungHA,ngayThangHA : ngayThangHA , linkHA: linkHA}, function (err){
+  HinhAnh.updateOne({tenHA : tenHA}, {tenHA: tenHA, noiDungHA : noiDungHA, ngayThangHA : ngayThangHA , linkHA: linkHA}, function (err){
     if(err) throw err;
     console.log('Sua thanh cong');
   });
