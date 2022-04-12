@@ -25,20 +25,20 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/InsertPhoto',function (req,res) {
+router.get('/insertPhoto',function (req,res) {
   console.log('InsertPhoto')
   res.render('insertPhoto',{title : 'InsertPhoto'});
 })
 
-router.get('/UpdatePhoto',function (req,res) {
+router.get('/updatePhoto',function (req,res) {
   console.log('UpdatePhoto')
   res.render('updatePhoto',{title : 'UpdatePhoto'});
 })
 
-router.get('/HomePhoto',function (req,res) {
+router.get('/homePhoto',function (req,res) {
   console.log('HomePhoto')
   HinhAnh.find({}, function (err, data){
-    res.render('HomePhoto', {data: data});
+    res.render('homePhoto', {data: data});
     console.log(data)
   })
 })
