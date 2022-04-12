@@ -27,18 +27,18 @@ router.get('/', function(req, res, next) {
 
 router.get('/insertPhoto',function (req,res) {
   console.log('InsertPhoto')
-  res.render('insertPhoto',{title : 'InsertPhoto'});
+  res.render('InsertPhoto',{title : 'InsertPhoto'});
 })
 
 router.get('/updatePhoto',function (req,res) {
   console.log('UpdatePhoto')
-  res.render('updatePhoto',{title : 'UpdatePhoto'});
+  res.render('UpdatePhoto',{title : 'UpdatePhoto'});
 })
 
 router.get('/homePhoto',function (req,res) {
   console.log('HomePhoto')
   HinhAnh.find({}, function (err, data){
-    res.render('homePhoto', {data: data});
+    res.render('HomePhoto', {data: data});
     console.log(data)
   })
 })
