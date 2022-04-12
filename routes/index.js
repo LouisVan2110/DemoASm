@@ -71,7 +71,7 @@ router.post('/insertHA', function (request, response){
       mes = 'them thanh cong'
       console.log('them thanh cong')
     }else mes = error
-    response.render('insertPhoto', {message: mes});
+    response.render('InsertPhoto', {message: mes});
   })
 });
 
@@ -97,7 +97,7 @@ router.post('/dataUpdate', function (request, response){
 
   console.log(idAnhUpdate);
   HinhAnh.find({_id : idAnhUpdate}, function (err, data){
-    response.render('updatePhoto', { data: data });
+    response.render('UpdatePhoto', { data: data });
   })
 });
 
