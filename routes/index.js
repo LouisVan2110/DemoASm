@@ -38,7 +38,7 @@ router.get('/UpdatePhoto',function (req,res) {
 router.get('/HomePhoto',function (req,res) {
   console.log('HomePhoto')
   HinhAnh.find({}, function (err, data){
-    res.render('homePhoto', {data: data});
+    res.render('HomePhoto', {data: data});
     console.log(data)
   })
 })
