@@ -102,6 +102,8 @@ router.post('/dataUpdate', function (request, response){
 });
 
 
+
+
 // Xóa ảnh
 router.post('/deleteHA', function (request, response){
   var idAnh = request.body.idAnh;
